@@ -9,7 +9,7 @@ interface CalendlyPopupButtonProps {
   children: React.ReactNode;
   url?: string;
   className?: string;
-  prefill?: Record<string, any>;
+  prefill?: Record<string, unknown>;
   utm?: Record<string, string>;
 }
 
@@ -44,7 +44,15 @@ export function CalendlyPopupButton({
 
   const handleClick = () => {
     if (window.Calendly) {
-      (window.Calendly as any).initPopupWidget({
+      (
+        window.Calendly as {
+          initInlineWidget: (options: {
+            url: string;
+            prefill?: Record<string, unknown>;
+            utm?: Record<string, string>;
+          }) => void;
+        }
+      ).initInlineWidget({
         url: url,
         prefill: prefill,
         utm: utm,

@@ -1,7 +1,7 @@
 "use client";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import { ArrowRight, Globe, Sparkles, Calendar } from "lucide-react";
+import { ArrowRight, Globe, Sparkles } from "lucide-react";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { AnimatedCounter } from "@/components/animated-counter";

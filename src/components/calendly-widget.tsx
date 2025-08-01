@@ -78,7 +78,7 @@ export function CalendlyWidget({
               Book Your Free Consultation
             </h3>
             <p className="text-sm text-slate-300 mt-1">
-              Let's discuss your career goals and how we can help
+              Let us discuss your career goals and how we can help
             </p>
           </div>
           <button
@@ -109,7 +109,7 @@ declare global {
       initInlineWidget: (options: {
         url: string;
         parentElement: HTMLElement | null;
-        prefill?: Record<string, any>;
+        prefill?: Record<string, unknown>;
         utm?: Record<string, string>;
       }) => void;
     };

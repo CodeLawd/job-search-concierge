@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { CalendlyWidget } from "@/components/calendly-widget";
 import { ConsultationBookingSection } from "@/components/consultation-booking-section";
 
 // Import section components

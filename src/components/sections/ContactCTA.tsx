@@ -20,7 +20,7 @@ export function ContactCTA() {
             Ready to Transform Your Career?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto text-slate-400">
-            Join hundreds of tech professionals who've accelerated their careers
+            Join hundreds of tech professionals who have accelerated their careers
             with our concierge service. Book your free consultation today.
           </p>
 

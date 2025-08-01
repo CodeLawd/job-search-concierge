@@ -16,7 +16,7 @@ export function StickyCTA() {
         className="bg-teal-500 flex items-center hover:bg-teal-600 text-white shadow-lg px-6 py-3 rounded-lg font-semibold transition-all duration-300 glow-teal"
         url="https://calendly.com/your-calendly-username/consultation"
       >
-        Let's Talk <ArrowRight className="ml-2 h-4 w-4" />
+        Let&apos;s Talk <ArrowRight className="ml-2 h-4 w-4" />
       </CalendlyPopupButton>
     </motion.div>
   );

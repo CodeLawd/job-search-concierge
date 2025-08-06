@@ -122,7 +122,7 @@ export function TestimonialCarousel() {
     <div className="font-sans flex flex-col items-center py-16 px-4 sm:px-6 lg:px-8">
       {/* Main Heading */}
       <motion.h2
-        className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center max-w-4xl leading-tight mb-4 text-foreground"
+        className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center max-w-4xl leading-tight mb-4 text-white"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -163,9 +163,7 @@ export function TestimonialCarousel() {
                 loading="lazy"
               />
               <div>
-                <p className="font-semibold text-foreground">
-                  {testimonial.name}
-                </p>
+                <p className="font-semibold text-white">{testimonial.name}</p>
                 <p className="text-sm text-teal-400 font-medium">
                   {testimonial.title}
                 </p>

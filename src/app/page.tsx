@@ -19,8 +19,9 @@ export default function JobSearchConcierge() {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Header />
+      <div className="pt-16"> {/* Add padding to account for fixed header */}
       <Hero onGetStarted={() => setIsCalendlyOpen(true)} />
       <HowItWorks />
       <CoreBenefits />
@@ -32,6 +33,7 @@ export default function JobSearchConcierge() {
       <ContactCTA />
       <Footer />
       <StickyCTA />
+      </div>
     </div>
   );
 }

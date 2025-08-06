@@ -10,7 +10,7 @@ export function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className="sticky top-0 z-50 bg-slate-950 text-white border-b border-slate-800 backdrop-blur-sm"
+      className="fixed w-full top-0 z-50 bg-slate-950 text-white border-b border-slate-800 backdrop-blur-sm"
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <motion.div
@@ -41,7 +41,7 @@ export function Header() {
           )}
         </nav>
         <CalendlyPopupButton
-          className="bg-teal-500 flex items-center hover:bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+          className="hidden md:flex bg-teal-500 items-center hover:bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
           url="https://calendly.com/your-calendly-username/consultation"
         >
           <Calendar className="mr-2 h-4 w-4" />

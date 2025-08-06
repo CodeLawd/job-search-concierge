@@ -15,13 +15,6 @@ interface HeroProps {
 
 export function Hero({ onGetStarted }: HeroProps) {
   const heroRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ["start start", "end start"],
-  });
-
-  const heroY = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
     <section
@@ -32,7 +25,6 @@ export function Hero({ onGetStarted }: HeroProps) {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/20"></div>
 
       <motion.div
-        style={{ y: heroY, opacity: heroOpacity }}
         className="container mx-auto px-4 relative z-10"
       >
         <div className="grid lg:grid-cols-2 gap-12 items-center">

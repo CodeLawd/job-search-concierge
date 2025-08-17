@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { Briefcase, Calendar } from "lucide-react";
 import Link from "next/link";
 import { CalendlyPopupButton } from "@/components/calendly-popup-button";
+import { ThemeSwitcher } from "@/components/theme-switcher";
 
 export function Header() {
   return (
@@ -40,13 +41,16 @@ export function Header() {
             )
           )}
         </nav>
-        <CalendlyPopupButton
-          className="hidden md:flex bg-teal-500 items-center hover:bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
-          url="https://calendly.com/your-calendly-username/consultation"
-        >
-          <Calendar className="mr-2 h-4 w-4" />
-          Book Free Consultation
-        </CalendlyPopupButton>
+        <div className="flex items-center space-x-4">
+          <ThemeSwitcher />
+          <CalendlyPopupButton
+            className="hidden md:flex bg-teal-500 items-center hover:bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            url="https://calendly.com/your-calendly-username/consultation"
+          >
+            <Calendar className="mr-2 h-4 w-4" />
+            Book Free Consultation
+          </CalendlyPopupButton>
+        </div>
       </div>
     </motion.header>
   );
